@@ -19,7 +19,7 @@ function RestView() {
   const allRestaurant = useSelector((state)=>state.restaurantSlice.allRestaurant.restaurants);
   console.log("===all rest in rest view===");
   console.log(allRestaurant)
-  const selectedRestaurant = allRestaurant.find(item=>item.id===id)
+  const selectedRestaurant = allRestaurant.find(item => item.id == id)
   console.log(selectedRestaurant);
 
   return (
